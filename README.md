@@ -3,5 +3,5 @@ Coders: Xiaolong, Sam, Shayna
 
 Cheers for the kickoff! 
 
-June 28,2020
+June 28, 2020
 
