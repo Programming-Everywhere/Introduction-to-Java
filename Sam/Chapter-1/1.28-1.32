@@ -6,14 +6,37 @@ JavaChapter 1.7 - 1.9
 #Questions:
 
 1.28 What is a keyword? List some Java Keywords.
+-Keywords or Reserved words have a specific meaning 
+to the complier and cannot be used for other purposes
+in the program.
+-Java Keywords 
+class
+public
+static
+void
 
 1.29 Is Java case sensitive? What is the case for Java Keywords?
+-Java is case sensitive because it uses a C-style syntax. It would be
+wrong to replace main with Main in a program
+-The case for Java Keywords are 
 
 1.30 What is a comment? Is the comment ignored by the complier? How do you
-denota a comment line and a comment paragraph?
+denote comment line and a comment paragraph?
+-A comment that documents what the program is and how it is constructed.
+-Comments help programmers to communicate and understand program.
+-They are not programming statements so they are ignored by the complier.
+-You denote a comment line and a comment paragraph by Using //
+text when you want to comment a single line of code. Use /* text */ 
+when you want to comment multiple lines of code. Use /** documentation 
+*/ when you would want to add some info about the program that can be 
+used for automatic generation of program documentation.
 
 1.31 What is the statement to display a string on the console?
-
+System.out.println(string);
 
 1.32 Show the output of the following code:
+
+3.5 * 4 / 2 - 2.5
+=
+4.5
 
