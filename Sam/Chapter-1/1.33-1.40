@@ -1,0 +1,26 @@
+"""
+Date: 06 29 2020
+Author: Samantha
+JavaChapter 1.33 - 1.40
+"""
+#Questions:
+
+
+
+1.33 What is the Java source filename extension, and what is the Java bytecode filename extension?
+
+1.34 What are the input and output of a Java complier?
+
+1.35 What is the command to compile a Java program?
+
+1.36 What is the command to run a Java program?
+
+1.37 What is the JVM?
+
+1.38 Can Java run on any machine? What is needed to run Java on a computer?
+
+1.39 If a NoClassDefFoundError occurs when you run a program, what is the
+cause of the error?
+
+1.40 If a NoSuchMethodError occurs when you run a program, what is the cause 
+of the error?
