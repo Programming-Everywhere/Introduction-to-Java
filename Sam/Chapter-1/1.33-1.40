@@ -8,19 +8,38 @@ JavaChapter 1.33 - 1.40
 
 
 1.33 What is the Java source filename extension, and what is the Java bytecode filename extension?
+-The Java source filename extension is ( .java )
+-The Java bytecode filename extension is ( class )
 
 1.34 What are the input and output of a Java complier?
+The input of a Java compiler is a Java source code file and 
+the output is a Java class file.
 
 1.35 What is the command to compile a Java program?
+javac
 
 1.36 What is the command to run a Java program?
+java Welcome
 
 1.37 What is the JVM?
+Java Virtual Machine
 
 1.38 Can Java run on any machine? What is needed to run Java on a computer?
+Java can run on any machine with a JVM. 
+In order to write and run a Java program, you will need to install the software program
+called Java SE Development Kit/JDK, and SE means Standard Edition. 
+A JDK contains: JRE(Java Runtime Environment): & is the core of the Java 
+platform that enables running Java programs on your computer.
+
 
 1.39 If a NoClassDefFoundError occurs when you run a program, what is the
 cause of the error?
+NoClassDefFoundError: is an error that is thrown when the Java Runtime System 
+tries to load the definition of a class, and that class definition is no longer available. 
+The required class definition was present at compile time, but it was 
+missing at runtime. 
 
 1.40 If a NoSuchMethodError occurs when you run a program, what is the cause 
 of the error?
+The cause of the error is when you execute a class file that does not have a main 
+method or you mistype the main method.
