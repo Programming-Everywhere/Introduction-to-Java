@@ -5,15 +5,47 @@ JavaChapter 1.42 - 1.47
 """
 #Questions:
 
-1.42
+1.42 What are syntax errors (compile errors), runtinme errors, and logic errors?
+-Syntax Errors: a character or string incorrectly placed in a command or instruction 
+that causes a failure in execution.
+-Runtime Errors: are errors that cause a program to terminate abnormally
+-Logic Errors: occur when a program does not perform the way it was intended to. 
+-Input Error: occurs when the program is waiting for the user to enter a vaule, but the user 
+enters a vaule that the program cannot handle.
 
-1.43
+1.43 Give examples of syntax errors, runtime errors and logic errors.
+-Syntax Error: ("Welcome to Java!)
+-Runtime Error: Division by Zero, this happens when the divisor is zero for integer
+division.  ex. System.out.printIn(1/0)
+-Logic Error: . For example, assigning a value to the wrong variable may cause a 
+series of unexpected program errors. Multiplying two numbers instead of adding 
+them together may also produce unwanted results
 
-1.44
 
-1.45
+1.44 If you forgt to put a closing quotation mark on a string, what kind of error
+will be raised?
 
-1.46
+Syntax Error
 
-1.47
+1.45 If your program needs to read integers, but the user entered strings, an error
+would occur when running this program. What kind of error is this?
+
+Runtime Error
+
+1.46 Suppose you write a program for computing the perimeter of a rectangle and you
+mistakenly write your program so that it computes the area of a rectangle. What kind
+of error is this?
+
+Logic Error
+
+1.47 Identify and fix the errors in the following code:
+
+1 public class Welcome {
+2   public void main(String[] args) {
+3     System.out.printIn("Welcome to Java!");
+4     }
+5 
+
+
+
 
