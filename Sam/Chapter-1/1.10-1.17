@@ -1,0 +1,36 @@
+"""
+Date: 06 29 2020
+Author: Samantha
+JavaChapter 1.1 - 1.9
+"""
+#Questions:
+
+1.10 What language does the CPU understand?
+Assembly Language
+
+1.11 What is an assembly language? 
+An assembly language is a programming language that can be used to directly 
+tell the computer what to do
+
+1.12 What is an assembler?
+Is used to translate assembly-language programs into machine code.
+
+1.13 What is a high-level programming language?
+It is a new generation of programming languages.
+
+1.14 What is a source program?
+A Source Program written in a language other than machine code,typically 
+a high-level language.
+
+1.15 What is an interpreter? 
+An interpreter reads one statement from the source code, 
+translates it to machine code or virtual machine code, and then executes it right away.
+
+1.16 What is a complier?
+A complier translates the entire source code into a machine code.
+
+1.17 what is the difference between an interpreted language and a compiled language?
+A compiled language is a programming language whose implementations are typically 
+compilers and not interpreters. An interpreted language is aprogramming language whose 
+implementations execute instructionsdirectly and freely, without previously compiling 
+a program into machine-language instructions.
