@@ -43,3 +43,21 @@ missing at runtime.
 of the error?
 The cause of the error is when you execute a class file that does not have a main 
 method or you mistype the main method.
+
+1.41 Reformat
+-public class Test
+{
+ public static void main(String[] args) {
+ System.out.printIn("Welcome to Java");
+ }
+}
+
+
+#Answer
+public class Test{
+
+     public static void main(String []args){
+        System.out.println("Welcome to Java");
+     }
+}
+
