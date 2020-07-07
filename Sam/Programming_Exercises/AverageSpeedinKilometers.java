@@ -1,13 +1,13 @@
-  """ 
+  //
   Date: 07 02 2020 
   Author: Samantha 
   Java Programming Exercises
-  """ 
+  // 
   #Questions:
 
     
 
-#Answer
+//Answer
 
 
 public class Exercise_12 {
