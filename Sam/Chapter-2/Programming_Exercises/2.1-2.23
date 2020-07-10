@@ -1,0 +1,7 @@
+*/ 
+Samantha Alcantara
+Date : 07 10 2020
+
+(Convert Celsius to Fahrenheit) Write a program that reads a Celsius degree in
+a double value from the console, the converts it to Fahrenheit and displays the rest.
+The formula for the conversion is as follows:
