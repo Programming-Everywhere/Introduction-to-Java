@@ -5,8 +5,8 @@ a double value from the console, the converts it to Fahrenheit and displays the 
 
 import java.util.Scanner;
 
-public class Exercise_02_01 {
-	public static void main(String[] args) {
+class Exercise1 {
+    public static void main(String[] args) {
 		// Create new Scanner object
 		Scanner input = new Scanner(System.in);
 
@@ -21,7 +21,7 @@ public class Exercise_02_01 {
 		System.out.println(celsius + " Celsius is " + fahrenheit
 			+ " Fahrenheit"); 
 	}
-}
+      }
 
 
 
@@ -44,7 +44,7 @@ public class Exercise_02_01 {
    */
    
 import java.util.Scanner;
-public class ComputeVolumeWithConstant {
+public class Exercise2 {
 
     public static void main(String[] Strings) {
       final double PI = 3.14159;
@@ -348,7 +348,7 @@ public class ComputeVolumeWithConstant {
 	                                            	// Display the results
                                                     System.out.println("The population in " + years + " is " + population);
 	                                }
-                                }
+                                      }
                                 
                               
                              2.12 /* (Physics: Finding runway length)
@@ -388,7 +388,7 @@ public class ComputeVolumeWithConstant {
 	                                      	System.out.println("The minimum runway length for this" +
 							                        	 " airplane is " + length);
 	                                 }
-                                }
+                                      }
                                 
                                 
                               2.13 /*(Financial Application: Compound Value)
@@ -443,7 +443,7 @@ public class ComputeVolumeWithConstant {
 	                                          	// Display result
 		                                       System.out.println("After the sixth month, the account value is " + total);
 	                                    }
-                                    }
+                                         }
                                     
                                     
                                  2.14 /*(Healthy Application : Computing BMI)
@@ -488,7 +488,7 @@ public class ComputeVolumeWithConstant {
 		                                                  // Display result
 		                                            System.out.println("BMI is " + bodyMassIndex);
 	                                            }
-                                            }
+                                                }
                                       
                                   2.15 /* (Geometry: Distance of Two Points)
                                           Write a program that prompts the user to enter two points (x1,y1) and
@@ -540,7 +540,7 @@ public class ComputeVolumeWithConstant {
 	                                                	// Display result
                                               		System.out.println("The area of the hexagon is " + area); 
 	                                              }
-                                               }
+                                                   }
                                                
                                                
                                        
@@ -626,7 +626,7 @@ public class Exercise18 {
 		System.out.println((int)a + "        " + (int)b + 
 			"        " + (int)Math.pow(a, b));
 	}
-}
+      }
 
 
 
@@ -663,8 +663,7 @@ public class Exercise19 {
 		// Display result
 		System.out.println("The area of the triangle is " + area);
 	}
-}
-
+       }
 
 2.20 /*(Financial Application: Calculate Interest) 
 If you know the balance and the annual
@@ -696,7 +695,7 @@ public class Exercise20 {
 		// Display result
 		System.out.println("The interest is " + interest);
 	}
-}
+      }
 
 
 2.21 /*(Financial application: calculate future investment value) 
@@ -785,7 +784,7 @@ public class Exercise22 {
 		System.out.println(" " + numberOfNickels + " nickels");
 		System.out.println(" " + numberOfPennies + " pennies");
 	}
-}
+     }
 
 
 
@@ -818,4 +817,4 @@ public class Exercise23 {
 		// Display result
 		System.out.println("The cost of driving is $" + CostOfDriving);
 	}
-}
+     }
