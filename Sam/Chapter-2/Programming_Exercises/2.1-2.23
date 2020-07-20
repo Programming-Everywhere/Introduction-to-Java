@@ -1,7 +1,821 @@
-*/ 
-Samantha Alcantara
-Date : 07 10 2020
-
-(Convert Celsius to Fahrenheit) Write a program that reads a Celsius degree in
+2.1 /*(Convert Celsius to Fahrenheit) Write a program that reads a Celsius degree in
 a double value from the console, the converts it to Fahrenheit and displays the rest.
-The formula for the conversion is as follows:
+*/
+
+
+import java.util.Scanner;
+
+public class Exercise_02_01 {
+	public static void main(String[] args) {
+		// Create new Scanner object
+		Scanner input = new Scanner(System.in);
+
+		// Prompt user to input a double
+		System.out.print("Enter a degree in Celsius: ");
+		double celsius = input.nextDouble();
+
+		// Convert Celsius to Fahrenheit
+		double fahrenheit = 9.0 / 5 * celsius + 32;
+
+		// Display results
+		System.out.println(celsius + " Celsius is " + fahrenheit
+			+ " Fahrenheit"); 
+	}
+}
+
+
+
+
+
+
+2.2 /*(Compute the volume of a cylinder)
+    Write a program that reads in radius & the length of a cylinder & computes 
+    the area & volume using the following formulas:
+    
+    area = radius * radius * 𝜋
+    volume = area * length
+    
+    Here is a sample run: 
+    
+    Enter the radius & length of a cylinder: 5.5 12
+    The area is 95.0331
+    The volume is 1140.4
+    
+   */
+   
+import java.util.Scanner;
+public class ComputeVolumeWithConstant {
+
+    public static void main(String[] Strings) {
+      final double PI = 3.14159;
+      Scanner input = new Scanner(System.in);
+
+      System.out.print("Enter the radius and the length of a cylinder: ");
+      double radius = input.nextDouble();
+      double length = input.nextDouble();
+
+      double area = radius * radius * 3.14159265359;
+      double volume = area * length;
+
+      System.out.println("The area is " + area);
+      System.out.println("The volume is " + volume);
+    }
+}
+
+
+
+2.3 /*(Convert Feet into Meters) 
+    Write a program that reads a number in feet, converts it to meters, 
+    and displays the result. One foot is 0.305 meters. 
+    
+    Here is a sample run:
+    
+    Enter a value for feet: 16.5
+    165 feet is 5.0325 meters
+    */
+    
+    import java.util.Scanner;
+    
+    public class Exercise3 {
+
+        public static void main(String[] Strings) {
+             // Create a Scanner Object
+         Scanner input = new scanner(System.in);
+            //Create a Constant value
+         final double METERS_PER_FOOT = 0.305;
+           // Prompt User to Enter a Number in ft
+         System.out.print("Enter a value for feet: ");
+         double feet = input.nxtDouble();
+            // Convert feet into Meters 
+         double meters = feet * METERS_PER_FOOT;
+            // Display Results
+         System.out.println(feet + "feet is" + meters + " meters");
+        }   
+     }
+         
+         
+    2.4 (Convert punds into Kilograms)
+        Write a program that converts pounds into kilograms. The program
+        prompts the user to enter a number is pounds. Convert it to kilograms
+        and display the result. One pound is 0.454 kilograms. 
+        
+        Here is a sample run:
+        
+        Enter a number in pounds: 55.5
+        55.5 lbs is 25.197 kilograms 
+        
+        */ 
+        import java.util.Scanner;
+        public class ConverttoKilograms {
+          public static void main(String[] args) {
+             Scanner input = new Scanner(System.in);
+             final double KILOGRAMS_PER_POUND = 0.454;
+             System.out.print("Enter a number pounds: ");
+             double pounds = input.nextDouble();
+             System.out.println(pounds + "pound is " + Kilograms +
+             "kilograms");
+             
+           }  
+        }
+        
+        
+        2.5 /* (Financial Application: Calculate Tips)
+            Write a program that reads the subtotal and the gratuity rate,
+            then compute the gravity and total. For example if the user 
+            enters 10 for the subtotal and 15% for the gratuity rate, the program
+            displays $1.5 as gratuity and $11.5 as total.
+            
+            Here is a sample run:
+            
+            Enter the subtotal and a gratuity rate: 10 15
+            The gratuity is $1.5 and total is $11.5
+            
+            */
+            
+            import java.util.Scanner;
+            public class Financial Application {
+               public static void main(String[] args) {
+                 // Create a new Scanner Object
+               System.out.print("Enter the subtotal and the gratuity rate: ");
+               double subtotal = input.nextDouble();
+               double gratuityRate = input.nextDouble();
+                   //Calculate gratuity and total
+               double gratuity = subtotal + (gratutityRate/100);
+               double total = Subtotal + gratuity;
+               
+               System.out.println("The gratuity is $ " + gratuity +
+               " and total is $ + total);
+              }
+            }
+            
+            
+            2.6 /*(Sum the digits in an integer)
+                Write a program that read an integer between 0 and 1000 and 
+                add all the digits in the integer for. For example if an integer
+                is 932 the sum of all digits is 14.
+                
+                Hint: Use the % operator to extra digits, and use the / operator to 
+                remove the extracted digit. For instance, 932 % 10 = 2 and 932 / 10 = 93.
+                
+                Here is a sample run: 
+                
+                Enter a number between 0 and 1000: 999
+                The Sum of the digits are 27 
+                
+                */
+                
+                import java.util.Scanner;
+                public class SumDigits {
+                   public static void main(String[] args) {
+                   Scanner input = new Scanner(System.in);
+                   System.out.print("Enter a number between 0 and 1000: ");
+                   
+                   int lessThan10 = number % 10;
+                   number /= 10;
+                   int hundres = number % 10;
+                   number /= 10;
+                   int sum = hundres + tens + lessThan10;
+                   System.out.println("The sum of the digits is " + sum);
+                   
+                 } 
+               }
+               
+               
+               
+               2.7 /* (Find the number of  years)
+                   Write a program that prompts the user to enter minutes (1 billion) 
+                   and displays the number of years and days for minutes. For 
+                   simplicity, assume a year has 365 days. 
+                   
+                   
+                   Here is a sample run:
+                   
+                   Enter the number of minutes: 1000000000 
+                   Minutes is Approximately 1902 years and 214 days
+                   */
+                   import java.util.Scanner;
+                   public class NumberofYears {
+                      public static void main(String[] args) {
+                      Scannner input = new Scanner(System.in);
+                        // Prompt user to enter the number of minutes
+                      System.out.print("Enter the number of minutes: ");
+                      
+                      int minutes = input.nextln();
+                      int years = minutes / 525600;
+                      int days = (minutes % 525600) / 1440;
+                                            
+                      System.out.println("minutes + "minutes is approximately" + years + "years and"
+                      " + days + "days");
+                      
+                      }
+                   }
+                   
+                   
+                   
+                   2.8 (Current Time) Listing 2.7 ShowCurrentTime.java
+                       Gives a program that displays the current time in GMT. Revise
+                       the program that it prompts the user to enter the time zone and offset to
+                       GMT and displays the time in the specified time zone.
+                       
+                       
+                       Here is a sample run:
+                       
+                       Enter te time zone offset to GMT: -5
+                       The current time is 4:50:34
+                       
+                       import java.util.Scanner;
+                       public Class ShowCurrentTime {
+                          public static void main(String[] args) {
+                          Scanner input = new Scanner(System.in);
+                          System.out.print("Enter the time zone offset to GMT:: ");
+                          
+                          int offset = input.nextInt();
+                          
+                          long TotalSeconds = TotalSeconds
+                          long CurrentSeconds = TotalMilliseconds / 1000;
+                          long TotalMinutes = TotalSeconds / 60;
+                          long CurrentMinute = TotalMinutes % 60;
+                          long TotalHours = TotalMinutes / 60;
+                          long CurrentHour = TotalHours % 24;
+
+                          CurrentHour = CurrentHour + offset;
+                          System.out.println("Current time is " + currenthour + ":" +
+                          CurrenMinute + ":" + CurrentSecond);
+                          
+                        }  
+                      }
+                      
+                      
+                      
+                     2.9 /*(Physics: Acceleration) 
+                         Average acceleration is defined as the change of the velocity
+                         divided by the time taken to make the change of the velocity divided
+                         by the time taken to make the change, as shown in the following formula:
+                         
+                                       a = v1- v0
+                                            /
+                                            t
+                                          
+                         Write a program that prompts the user to enter the starting velocity v0
+                         in meters/seconds and the time span t in seconds and displays the average
+                         acceleration.
+                         
+                         Here is a sample run:
+                         
+                         Enter v0, v1 and t : 5.5 509. 4.5
+                         The Average Acceleration is 10.0889
+                         */
+                         import java.util.Scanner;
+                         public class Acceleration {
+                            public static void main(String[] args) {
+                            Scanner input = new Scanner(System.in);
+                            
+                            System.out.print("Enter v0, v1 and t: ");
+                            double v0 = input.nextDouble();
+                            double v1 = input.nextDouble();
+                            double t = input.nextDouble();
+                            
+                            double a = (v1 - v0) / t;
+                            System.out.println("The average acceleration is " + a);
+                            
+                           } 
+                       }
+                       
+                       
+                    2.10 /*(Science: Calculating Energy) 
+                         Write a program that calculates the enerfy needed to heat water from 
+                         an initial temperature to a final temp. Your program should prompt the user
+                         to enter the amount of water in kilograms and the initial and final temp 
+                         of the water. The formula to compute the energy is:
+                         
+                         Q = M * (Final Temperature - Initial Temperature) * 4184
+                         
+                         Where M is the weight of water in Kilograms temps are in degrees  
+                         Celsius and energy Q is measured in joules.
+                         
+                         Here is a sample run:
+                         
+                         Enter the amount of water in kilograms: 55.5
+                         Enter the initial temperature: 3.5
+                         Enter the final temperature: 10.5
+                         
+                         The Energy needed is 1625484.0
+                         */
+                         import java.util.Scanner;
+                         public class Exercise10 {
+                            public class static void main(String[] args);
+                            Scanner input = new Scanner(System.in);
+                            System.out.print("Enter the amoutn of water in kilograms: ");
+                            double kilograms = input.nextDouble();
+                            
+                            System.out.print("Enter the initial temperature: ");
+                            double Initial Temperature = input.nextDouble();
+                            System.out.print("Enter the final Temperature: ");
+                            double Final Temperature = input.nextDouble();
+                            
+                            double Energy = Kilograms = (Final Temperature - InitialTemperature) * 4
+                            System.out.println("The energy needed is " + energy);
+                            
+                           }
+                         }
+                         
+                         
+                         
+                         
+                         2.11 /* (Population Projection)
+                              Rewrite Programming Exercise 1.11 to prompt the user to enter the
+                              number of years and displays the population after the number of years.
+                              Use the hint in Programming Exercise 1.11 for this program. The population
+                              should be cast into an integer.
+                              
+                              Here is a sample run: 
+                              
+                              Enter the number of years: 5
+                              The population in 5 years is: 325932970
+                                */
+                                
+                              import java.util.Scanner;
+                              public class Exercise11 {
+	                                   public static void main(String[] args) {
+		                                        Scanner input = new Scanner(System.in);	// Create a Scanner object
+	                                          	// Prompt the user to the number of years
+                                             		 System.out.print("Enter the number of years: ");
+		                                             int years = input.nextInt();
+                                               // Calculate population projection
+		                                             int population = 312032486 + (((31536000 / 7) - (31536000 / 13)
+							                                                                    	+ (31536000 / 45)) * years);
+
+	                                            	// Display the results
+                                                    System.out.println("The population in " + years + " is " + population);
+	                                }
+                                }
+                                
+                              
+                             2.12 /* (Physics: Finding runway length)
+                                  Given an airplane's acceleration a and take-off speed v, you can 
+                                  compute the minimum runway length needed for an airplane to take off 
+                                  using the following formula:
+                                  
+                                  
+                                  length = v2
+                                            /
+                                            2a
+                                            
+                                  Write a program that prompts the user to enter v in meters/second (m/s)
+                                  and the acceleration a in meteres/second squared (m/s2) and displays the 
+                                  minimum runway length. 
+                                  
+                                  Here is a sample run:
+                                  
+                                  Enter the speed and acceleration: 60 3.5
+                                  The minimum runway length for this airplane is 514.286
+                                  */
+                                  import java.util.Scanner;
+                                  // Scanner is in the java.util package
+                                  public class Exercise12 {
+                                         public static void main(String[] args) {
+                                         Scanner input = new Scanner(System.in);	
+                                         // Create new Scanner object.
+		                                     // Prompt user to enter the airplane's acceleration a and take-off spead v.
+		                                     System.out.print("Enter speed and acceleration: ");
+                                         double speed = 60;
+                                         double acceleration = 3.5;
+                                         // Compute the minimum runway length 
+		                                     // needed for an airplane to take off.
+		                                      double length = Math.pow(speed, 2) / (2 * acceleration);
+
+	                                    	// Display result
+	                                      	System.out.println("The minimum runway length for this" +
+							                        	 " airplane is " + length);
+	                                 }
+                                }
+                                
+                                
+                              2.13 /*(Financial Application: Compound Value)
+                                   Suppose you save $100 each month into a savings account with 
+                                   annual interest rate 5% thus the monthly interest rate is 0.5 / 12 = 0.00417
+                                   After the first month, the value in the acount becomes:
+                                   
+                                   100 x (1 + 0.00417) = 100.417
+                                   
+                                   After the second month, the value in the account becomes
+                                   (100 + 100.417) * (1 + 0.00417) = 201.252
+                                   
+                                   After the third month, the value in the account becomes
+                                   (100 + 201.252) * (1 + 0.00417) = 302.507
+                                   and so on...
+                                   
+                                   Write a program that prompts the user to enter a monthly 
+                                   savings amount that displays the account value after the 
+                                   sixth month. (In Exercise 5.3 you will use a loop to 
+                                   simplify the code and display the account value for any month
+                                   
+                                   Enter the monthly saving amount: 100 
+                                   After the sixth month, the account value is $608.81
+                                   */
+                                   
+                                   import java.util.Scanner;
+
+                                   public class Exercise13 {
+	                                        public static void main(String[] args) {
+		                                      Scanner input = new Scanner(System.in);
+                                              // Create a new Scanner object.
+		                                      final double MONTHLY_INTEREST_RATE = 0.00417;	
+                                              // Initialize constant value
+
+	                                      	    // Prompt the user to enter a montly saving amount
+		                                      System.out.print("Enter the monthly saving amount: ");
+	                                      	double savingAmount = input.nextDouble();
+
+		                                          // Compute first month account value
+		                                      double total = 100 * (1 + MONTHLY_INTEREST_RATE);
+		                                          // Compute second month account value
+		                                      total = (100 + total) * (1 + MONTHLY_INTEREST_RATE);
+		                                          // Compute third month account value
+	                                      	total = (100 + total) * (1 + MONTHLY_INTEREST_RATE);
+		                                          // Compute forth month account value
+	                                      	total = (100 + total) * (1 + MONTHLY_INTEREST_RATE);
+		                                          // Compute fifth month account value
+                                      		total = (100 + total) * (1 + MONTHLY_INTEREST_RATE);
+	                                          	// Compute sixth month account value
+		                                      total = (100 + total) * (1 + MONTHLY_INTEREST_RATE);
+
+	                                          	// Display result
+		                                       System.out.println("After the sixth month, the account value is " + total);
+	                                    }
+                                    }
+                                    
+                                    
+                                 2.14 /*(Healthy Application : Computing BMI)
+                                      body Mass INdex(BMI) is a measure of health on weight.
+                                      It can be calculated by taking your weight in kilograms and 
+                                      dividing by the square of your height in meters. Write a program
+                                      that prompts the user to enter a weight in pounds and height
+                                      in inches and displays the BMI. Note that one pound is 0.45359237
+                                      kilograms and one inch is 0.0254 meters.
+                                      
+                                      Here is a sample run:
+                                      
+                                      Enter weight in pounds: 95.5
+                                      Enter height in inches: 50
+                                      BMI is 26.8573
+                                      */
+                                      
+                                      import java.util.Scanner;
+                                      public class Exercise14 {
+	                                            public static void main(String[] args) {
+                                          		Scanner input = new Scanner(System.in);
+		                                          final double KILOGRAMS_PER_POUND = 0.45359237;
+		                                          final double METERS_PER_INCH = 0.0254;
+
+		                                            // Prompt the user to enter a weight in pounds
+		                                          System.out.print("Enter weight in pounds: ");
+		                                          double weight = input.nextDouble();
+
+		                                            // Prompt the user to enter height in inches
+                                          		System.out.print("Enter height in inches: ");
+		                                          double height = input.nextDouble();
+
+		                                            // Convert weight to kilograms
+		                                          weight = weight * KILOGRAMS_PER_POUND;
+
+		                                            // Convert height to meters
+		                                          height = height * METERS_PER_INCH;
+
+		                                            // Compute BMI
+	                                             	double bodyMassIndex = weight / Math.pow(height, 2);
+
+		                                                  // Display result
+		                                            System.out.println("BMI is " + bodyMassIndex);
+	                                            }
+                                            }
+                                      
+                                  2.15 /* (Geometry: Distance of Two Points)
+                                          Write a program that prompts the user to enter two points (x1,y1) and
+                                          (x2,y2) and displays their distance between them.
+                                          
+                                          
+                                          import java.util.Scanner;
+
+                                          public class Exercise15 {
+	                                               public static void main(String[] args) {
+		                                             Scanner input = new Scanner(System.in);
+
+		                                              // Prompt the user to enter two points
+		                                             System.out.print("Enter x1 and y1: ");
+		                                             double x1 = input.nextDouble();
+		                                             double y1 = input.nextDouble();
+		                                             System.out.print("Enter x2 and y2: ");
+	                                               double x2 = input.nextDouble();
+		                                             double y2 = input.nextDouble();
+
+		                                                // Calucate the distance between the two points
+		                                             double distance = Math.pow(Math.pow(x2 - x1, 2) +
+						                                		 Math.pow(y2 - y1, 2), 0.5);
+
+	                                                	// Display result
+		                                             System.out.println("The distance between the two points is " + distance);
+                                             	}
+                                            }
+                                            
+                                     
+                                     
+                                     2.16 /*(Geometry: area of a hexagon) 
+                                     Write a program that prompts the user to enter the side of a hexagon 
+                                     and displays its area.
+                                     */
+
+                                          import java.util.Scanner;
+                                          public class Exercise16 {
+                                                	public static void main(String[] args) {
+		                                              Scanner input = new Scanner(System.in);
+
+	                                                	// Prompt the user to enter the side of a hexagon
+	                                              	System.out.print("Enter the side: ");
+	                                               	double side = input.nextDouble();
+
+		                                                // Compute the area of the hexagon
+	                                              	double area = ((3 * Math.pow(3, 0.5)) / 2) * Math.pow(side, 2);
+
+	                                                	// Display result
+                                              		System.out.println("The area of the hexagon is " + area); 
+	                                              }
+                                               }
+                                               
+                                               
+                                       
+                                       
+2.17 /*(Science: wind-chill temperature) 
+How cold is it outside? The temperature alone
+is not enough to provide the answer. Other factors including wind speed, relative
+humidity, and sunshine play important roles in determining coldness outside.
+In 2001, the National Weather Service (NWS) implemented the new wind-chill
+temperature to measure the coldness using temperature and wind speed. The
+formula is
+		twc = 35.74 + 0.6215ta - 35.75v^0.16 + 0.4275tav^0.16
+where ta is the outside temperature measured in degrees Fahrenheit and v is the
+speed measured in miles per hour. twc is the wind-chill temperature. The formula
+cannot be used for wind speeds below 2 mph or temperatures below -58 ºF or
+above 41ºF.
+Write a program that prompts the user to enter a temperature between -58 ºF and
+41ºF and a wind speed greater than or equal to 2 and displays the wind-chill temperature.
+Use Math.pow(a, b) to compute v0.16
+*/
+import java.util.Scanner;
+
+public class Exercise17 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Prompt the user to enter a temperature between -58F and 
+		// 41F and a wind speed greater than or equal to 2.
+		System.out.print("Enter the temperature in Fahrenheit " +
+			"between -58ºF and 41ºF: ");
+		double temperature = input.nextDouble();
+		System.out.print("Enter the wind speed (>= 2) in miles per hour: ");
+		double speed = input.nextDouble();
+
+		// Compute the wind chill index
+		double windChill = 35.74 + 0.6215 * temperature -
+								 35.75 * Math.pow(speed, 0.16) +
+								 0.4275 * temperature * Math.pow(speed, 0.16);
+
+		// Display result
+		System.out.println("The wind chill index is " + windChill);
+	}
+}                                          
+                                   
+                                   
+                                   
+2.18 /*(Print a table)
+Write a program that displays the following table. Cast floating-point 
+numbers into integers.
+                      
+a 		b 		pow(a, b)
+1 		2 		1
+2 		3 		8
+3 		4 		81
+4 		5 		1024
+5 		6 		15625
+*/
+
+
+
+public class Exercise18 {
+	public static void main(String[] args) {
+		float a, b;
+		System.out.println("a        b        pow(a, b)");
+		a = 1;
+		b = 2;
+		System.out.println((int)a + "        " + (int)b + 
+			"        " + (int)Math.pow(a, b));
+		a++;
+		b++;
+		System.out.println((int)a + "        " + (int)b + 
+			"        " + (int)Math.pow(a, b));
+		a++;
+		b++;
+		System.out.println((int)a + "        " + (int)b + 
+			"        " + (int)Math.pow(a, b));
+		a++;
+		b++;
+		System.out.println((int)a + "        " + (int)b + 
+			"        " + (int)Math.pow(a, b));
+		a++;
+		b++;
+		System.out.println((int)a + "        " + (int)b + 
+			"        " + (int)Math.pow(a, b));
+	}
+}
+
+
+
+
+2.19/*(Geometry: area of a triangle) 
+Write a program that prompts the user to enter
+three points (x1, y1), (x2, y2), (x3, y3) of a triangle and displays its area.
+*/
+
+
+
+import java.util.Scanner;
+
+public class Exercise19 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Prompt the user to enter three points
+		System.out.print("Enter three points for a triangle: ");
+		double x1 = input.nextDouble();
+		double y1 = input.nextDouble();
+		double x2 = input.nextDouble();
+		double y2 = input.nextDouble();
+		double x3 = input.nextDouble();
+		double y3 = input.nextDouble();
+
+		// Compute the area of a triangle
+		double side1 = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2), 0.5);
+		double side2 = Math.pow(Math.pow(x3 - x2, 2) + Math.pow(y3 - y2, 2), 0.5);
+		double side3 = Math.pow(Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2), 0.5);
+		double s = (side1 + side2 + side3) / 2;
+		double area = Math.pow(s * (s - side1) * (s - side2) * (s - side3), 0.5);
+
+		// Display result
+		System.out.println("The area of the triangle is " + area);
+	}
+}
+
+
+2.20 /*(Financial Application: Calculate Interest) 
+If you know the balance and the annual
+percentage interest rate, you can compute the interest on the next monthly payment
+using the following formula:
+interest = balance * (annualInterestRate/1200)
+Write a program that reads the balance and the annual percentage interest rate and
+displays the interest for the next month.
+*/
+
+
+
+
+import java.util.Scanner;
+
+public class Exercise20 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Prompt the user to enter a balance and
+		// the annual percentage interest rate
+		System.out.print("Enter balance and interest rate (e.g., 3 for 3%): ");
+		double balance = input.nextDouble();
+		double annualInterestRate = input.nextDouble();
+
+		// Calculate the interest
+		double interest = balance * (annualInterestRate / 1200);
+
+		// Display result
+		System.out.println("The interest is " + interest);
+	}
+}
+
+
+2.21 /*(Financial application: calculate future investment value) 
+Write a program that reads in investment amount, annual interest rate, 
+and number of years, and displays
+the future investment value using the following formula:
+
+                futureInvestmentValue =
+		investmentAmount * (1 + monthlyInterestRate)^numberOfYears * 12
+
+For example, if you enter amount 1000, annual interest rate 3.25%, and number
+of years 1, the future investment value is 1032.98.
+*/
+
+
+import java.util.Scanner;
+
+public class Exercise21 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Prompt the user to enter the investment amount,
+		// annual interest rate and number of years.
+		System.out.print("Enter investment amount: ");
+		double amount = input.nextDouble();
+		System.out.print("Enter annual interest rate in percentage: ");
+		double monthlyInterestRate = input.nextDouble();
+		monthlyInterestRate /= 1200;
+		System.out.print("Enter number of years: ");
+		int years = input.nextInt();
+
+		// Calculate future investment value
+		double futureInvestmentValue = 
+			amount * Math.pow(1 + monthlyInterestRate, years * 12);
+		
+		// Display result
+		System.out.println("Accumulated value is $" + futureInvestmentValue);
+ }
+} 
+
+
+2.22 /* (Financial Application: Monetary Units) 
+Rewrite Listing 2.10, ComputeChange.java, to fix the possible loss 
+of accuracy when converting a double value to an
+int value. Enter the input as an integer whose last two digits represent the cents.
+For example, the input 1156 represents 11 dollars and 56 cents.
+*/
+
+import java.util.Scanner;
+
+public class Exercise22 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Receive the amount
+		System.out.print(
+			"Enter an amount as integer, for example 1156 for 11.56: ");
+		int amount = input.nextInt();
+
+		int remainingAmount = amount;
+
+		// Find the number of one dollars
+		int numberOfOneDollars = remainingAmount / 100;
+		remainingAmount %= 100;
+
+		// Find the number of quarters in the remaining amount
+		int numberOfQuarters = remainingAmount / 25;
+		remainingAmount %= 25;
+
+		// Find the number of dimes in the remaining amount
+		int numberOfDimes = remainingAmount / 10;
+		remainingAmount %= 10;
+
+		// Find the number of nickels in the remaining amount
+		int numberOfNickels = remainingAmount / 5;
+		remainingAmount %= 5;
+
+		// Find the number of pennies in the remaining amoung
+		int numberOfPennies = remainingAmount;
+
+		// Display results
+		System.out.println("Your amount " + amount / 100.0 + " consists of");
+		System.out.println(" " + numberOfOneDollars + " dollars");
+		System.out.println(" " + numberOfQuarters + " quarters");
+		System.out.println(" " + numberOfDimes + " dimes");
+		System.out.println(" " + numberOfNickels + " nickels");
+		System.out.println(" " + numberOfPennies + " pennies");
+	}
+}
+
+
+
+
+2.23 /*(Cost of driving) 
+Write a program that prompts the user to enter the distance to
+drive, the fuel efficiency of the car in miles per gallon, and the price per gallon,
+and displays the cost of the trip.
+*/
+
+
+import java.util.Scanner;
+
+public class Exercise23 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		// Prompt the user to enter the distace to drive, the fuel 
+		// efficiency of the car in miles and the price per gallon.
+		System.out.print("Enter the driving distace: ");
+		double distace = input.nextDouble();
+		System.out.print("Enter miles per gallon: ");
+		double milesPerGallon = input.nextDouble();
+		System.out.print("Enter price per gallon: ");
+		double pricePerGallon = input.nextDouble();
+
+		// Compute the cost of driving
+		double CostOfDriving = (distace / milesPerGallon) * pricePerGallon;
+
+		// Display result
+		System.out.println("The cost of driving is $" + CostOfDriving);
+	}
+}
