@@ -6,7 +6,7 @@
 - State: property or attributes, represent by data fileds with current values. 
 - Behavior: it is the methods. 
 - Class: template, blueprint. Object is an instance of class. 
-- Instantiation: Create a calss is referred to as instantiation. 
+- Instantiation: Create a instance(object) is referred to as instantiation. 
 - Variable define data fields, methods define actions.
 - Constructors: Invoked to create a new object. Perform initializeing action, such as initializing the data filed of objects 
 - UML: Unified Modeling Language diagram = class diagram 
@@ -19,5 +19,6 @@ It is likes an rumcoke recipe, and a glass of rumcock, you can make any rumcock 
 - 9.2 How do you define a class?
 Class is a blueprint.
 - 9.3 How do you declare an object’s reference variable?
-
-- 9.4 How do you create an object?
+ClassName variableName; 
+- 9.4 How do you create an object? 
+the new operator is used to create an object from the constructor. Instantiation
